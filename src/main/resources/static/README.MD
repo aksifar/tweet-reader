@@ -35,18 +35,17 @@ User Name: sa
 Password: empty
 
 REST APIs:
+baseurl can be localhost or the ip of the machine where the application has been deployed
 
-GET <baseurl>:8090/tweets
-			OR
-    <baseurl>:8090/tweets?page=1&size=20
+<b>GET</b> baseurl:8090/tweets
+			    OR
+    	   baseurl:8090/tweets?page=1&size=20
  		This will return a paginated view of the tweets.
  		Default page size is 10 and page number is 0;
  	
-GET <baseurl>:8090/tweets/{tweet-id}
+<b>GET</b> baseurl:8090/tweets/{tweet-id}
 		This return one specific tweet with the mentioned tweet id.
 		
-DELETE <baseurl>:8090/tweets/{tweet-id}
+<b>DELETE</b> baseurl:8090/tweets/{tweet-id}
 		This deletes the specific tweet with the mentioned tweet id.
 		
-		
- 		
